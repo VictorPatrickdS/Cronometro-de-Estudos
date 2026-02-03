@@ -1,0 +1,161 @@
+#root {
+  text-align: center;
+}
+
+.titulo-principal{
+  font-size: 3rem;
+  color:#D4AF37;
+}
+
+.container{
+  border: #D4AF37 12px groove;
+  border-radius: 4px;
+  margin: 0 35%;
+  background-color: #f0e4ce;
+}
+
+.navbar{
+  display: flex;
+  border-bottom: groove #D4AF37 8px;
+}
+
+.bt-navbar{
+  border: none;
+  height: 2em;
+  width: 50%;
+  background-color: #001930;
+  color: #D4AF37;
+}
+
+.bt-navbar:hover{
+  opacity: .9;
+  color: gray;
+  cursor: pointer;
+  
+}
+
+.form-adicionar-materia{
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  align-items: center;
+}
+
+.inputs{
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.input-nome-materia{
+  width: 50%;
+  height: 1.5em;
+  border: 3px solid #D4AF37;
+  border-radius: 4px;
+}
+
+.input-horas{
+  width: 10%;
+  border: 3px solid #D4AF37;
+  border-radius: 4px;
+}
+
+.bt-add{
+  width: 20%;
+  border: 3px solid #D4AF37;
+  border-radius: 4px;
+  background-color: #001930;
+  color: #D4AF37;
+  cursor: pointer;
+}
+
+.bt-add:hover{
+  border-color: gray;
+  color: gray;
+}
+
+.titulo-lista-materias{
+  margin: 0;
+  background-color: #001930;
+  width: 100%;
+  border: #D4AF37 groove 8px;
+  color: gray;
+  border-left: none;
+  border-right: none;
+}
+
+.lista-materias-adicionadas{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.materia{
+  margin: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.negrito{
+  color: #001930;
+}
+
+.btn-apagar{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s
+}
+
+.btn-apagar:hover {
+  transform: scale(1.2);
+}
+
+/* Card Horas Materias*/
+
+.materia-concluida{
+  color: #2ecc71;
+  transition: color 0.5s ease;
+}
+
+.bt-controle{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s
+}
+
+.bt-controle:hover{
+  transform: scale(1.2);
+}
+
+.bt-salvar-horas{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s
+}
+
+.bt-salvar-horas:hover{
+  transform: scale(1.2);
+}
+
+.bt-resetar-td{
+  height: 3em;
+  width: 100%;
+  border: none;
+  background-color: #001930;
+  color: #D4AF37;
+  cursor: pointer;
+  border-top: #D4AF37 groove 4px;
+}
+
+.bt-resetar-td:hover{
+  color: gray;
+  border-color: gray;
+}
