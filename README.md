@@ -1,73 +1,50 @@
-# React + TypeScript + Vite
+📅 Cronômetro de Estudos 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O Cronômetro de Estudos é uma aplicação web desenvolvida para auxiliar no gerenciamento de tempo de estudo por disciplina.
+Com ele, é possível cadastrar matérias, definir metas semanais de horas e acompanhar o progresso em tempo real através de cronômetros individuais.
 
-Currently, two official plugins are available:
+O projeto foi pensado para ser simples, intuitivo e funcional, utilizando React + TypeScript e persistindo dados localmente no navegador.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Funcionalidades
 
-## React Compiler
+Cadastro de Disciplinas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ - Adição dinâmica de matérias
+ - Definição de meta de horas (aceita valores decimais)
+ - Remoção de disciplinas cadastradas
 
-## Expanding the ESLint configuration
+Cronômetro Individual por Matéria
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+ - Início e pausa do cronômetro
+ - Contagem precisa em segundos
+ - Conversão automática para horas, minutos e segundos
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Controle de Progresso
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+ - Soma automática do tempo estudado ao salvar uma sessão
+ - Conversão de segundos para horas decimais
+ - Feedback visual:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Persistência de Dados
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+ - Armazenamento no LocalStorage
+ - Os dados permanecem salvos mesmo após atualizar a página
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Reset Semanal
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+ - Botão para resetar todas as horas estudadas
+ - Ideal para reinício de ciclos semanais de estudo
+ 
+
+🧰 Tecnologias Utilizadas 
+
+- React.js
+- TypeScript
+- TSX
+- CSS3
+- LocalStorage API
+- Git 
+
+👤 Autor
+
+Desenvolvido por Victor Patrick da Silva
