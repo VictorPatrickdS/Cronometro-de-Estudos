@@ -11,6 +11,11 @@ interface Materia {
   qtdHorasEstudadas: number
 }
 
+interface MateriaItemProps {
+  materia: Materia; 
+  atualizarTempoMateria: (id: number, segundosEstudados: number) => void;
+}
+
 // Formata o tempo do cronometro em hrs, min e seg
 
 const formatarTempo = (totalSegundos: number) => {
@@ -22,7 +27,7 @@ const formatarTempo = (totalSegundos: number) => {
 
 // Lista das matérias e cronometro
 
-function MateriaItem({materia, atualizarTempoMateria}) {
+function MateriaItem({materia, atualizarTempoMateria}: MateriaItemProps) {
     const [segundos, setSegundos] = useState(0)
     const [rodando, setRodando] = useState(false)
 
